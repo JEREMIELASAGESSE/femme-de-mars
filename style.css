@@ -1,13 +1,13 @@
 :root {
-    --primary: #8E24AA;
-    --primary-light: #D1C4E9;
-    --primary-dark: #6A1B9A;
-    --accent: #FF4081;
-    --accent-light: #FF80AB;
-    --text-light: #FFFFFF;
-    --text-dark: #333333;
-    --background: #FAFAFA;
-    --background-alt: #F3E5F5;
+    --primary: #5D2E46;        
+    --primary-light: #A86464;  
+    --primary-dark: #3C1E2F;  
+    --accent: #E9C46A;         
+    --accent-light: #F4D35E;  
+    --text-light: #FFFFFF;     
+    --text-dark: #2A2A2A;      
+    --background: #F8F4F1;     
+    --background-alt: #E9E0D6; 
 }
 
 * {
