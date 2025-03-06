@@ -3,175 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E2C MAG - Célébration des Femmes Inspirantes</title>
+    <title>E2C - Célébration des Femmes Inspirantes</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #5D2E46;
-            --accent: #E9C46A;
-            --text-dark: #2A2A2A;
-            --background-light: #F8F4F1;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: var(--background-light);
-            color: var(--text-dark);
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .header {
-            background: linear-gradient(135deg, var(--primary), #7A4063);
-            color: var(--accent);
-            padding: 40px 0;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .header-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        .logo img {
-            width: 100px;
-            height: 100px;
-            margin-right: 20px;
-        }
-
-        .logo-text {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            color: var(--accent);
-        }
-
-        .header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            margin-bottom: 15px;
-        }
-
-        .header p {
-            font-size: 1.3rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .featured-women {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            padding: 60px 0;
-        }
-
-        .woman-card {
-            background-color: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .woman-card:hover {
-            transform: translateY(-15px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-        }
-
-        .woman-card-image {
-            height: 400px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .woman-card-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-
-        .woman-card:hover .woman-card-image img {
-            transform: scale(1.1);
-        }
-
-        .woman-card-content {
-            padding: 25px;
-            background-color: white;
-        }
-
-        .woman-card-content h2 {
-            font-family: 'Playfair Display', serif;
-            color: var(--primary);
-            margin-bottom: 10px;
-            font-size: 1.8rem;
-        }
-
-        .woman-card-content .role {
-            color: var(--accent);
-            font-style: italic;
-            margin-bottom: 15px;
-        }
-
-        .cta-section {
-            background-color: var(--accent);
-            color: var(--primary);
-            text-align: center;
-            padding: 60px 0;
-        }
-
-        .cta-section h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            margin-bottom: 25px;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: var(--primary);
-            color: var(--accent);
-            padding: 15px 35px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            letter-spacing: 1px;
-        }
-
-        .btn:hover {
-            background-color: #4A1C37;
-            transform: translateY(-5px);
-        }
-
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2.5rem;
-            }
-            .featured-women {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
 <body>
     <header class="header">
@@ -229,5 +63,16 @@
             <a href="./display_generator.html" class="btn">Créer ma photo</a>
         </div>
     </section>
+    <footer>
+        <div class="container">
+            <p>💜 Célébrons les femmes ensemble ! ✨</p>
+            <p>Projet open-source sous licence MIT</p>
+            <div class="social-links">
+                <a href="https://github.com/Ano2225/generateur-dp-8mars" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

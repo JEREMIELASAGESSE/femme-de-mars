@@ -1,13 +1,8 @@
 :root {
-    --primary: #5D2E46;        
-    --primary-light: #A86464;  
-    --primary-dark: #3C1E2F;  
-    --accent: #E9C46A;         
-    --accent-light: #F4D35E;  
-    --text-light: #FFFFFF;     
-    --text-dark: #2A2A2A;      
-    --background: #F8F4F1;     
-    --background-alt: #E9E0D6; 
+    --primary: #5D2E46;
+    --accent: #E9C46A;
+    --text-dark: #2A2A2A;
+    --background-light: #F8F4F1;
 }
 
 * {
@@ -23,190 +18,147 @@ body {
     line-height: 1.6;
 }
 
- 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-header {
-    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-    color: var(--text-light);
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background: linear-gradient(135deg, var(--primary), #7A4063);
+    color: var(--accent);
     padding: 40px 0;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .header-content {
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: var(--accent);
+}
+
+.header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.header p {
+    font-size: 1.3rem;
     max-width: 800px;
     margin: 0 auto;
 }
 
-header h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-}
-
-header p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    font-weight: 300;
-}
-
-.btn {
-    display: inline-block;
-    padding: 14px 32px;
-    background-color: var(--accent);
-    color: var(--text-light);
-    text-decoration: none;
-    border-radius: 50px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.btn:hover {
-    background-color: var(--accent-light);
-    transform: translateY(-3px);
-    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
-}
-
-.hero {
-    padding: 100px 0;
-    background-color: var(--background-alt);
-    text-align: center;
-}
-
-.hero h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: var(--primary-dark);
-}
-
-.hero p {
-    font-size: 1.2rem;
-    max-width: 800px;
-    margin: 0 auto 40px;
-}
-
-.features {
-    padding: 80px 0;
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.section-title h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    color: var(--primary-dark);
-    margin-bottom: 20px;
-    position: relative;
-    display: inline-block;
-}
-
-.section-title h2::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background-color: var(--accent);
-}
-
-.women-grid {
+.featured-women {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 60px 0;
 }
 
 .woman-card {
-    background-color: var(--text-light);
-    border-radius: 10px;
+    background-color: white;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 .woman-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-15px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
-.woman-img {
-    height: 250px;
-    background-size: cover;
-    background-position: center;
+.woman-card-image {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
 }
 
-.woman-info {
+.woman-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.woman-card:hover .woman-card-image img {
+    transform: scale(1.1);
+}
+
+.woman-card-content {
     padding: 25px;
+    background-color: white;
 }
 
-.woman-info h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: var(--primary-dark);
-}
-
-.woman-info p.role {
-    font-size: 1rem;
-    color: var(--primary);
-    margin-bottom: 15px;
-    font-style: italic;
-}
-
-.woman-info p.description {
-    font-size: 0.95rem;
-    margin-bottom: 15px;
-}
-
-.quote-section {
-    background-color: var(--primary-dark);
-    color: var(--text-light);
-    padding: 80px 0;
-    text-align: center;
-}
-
-.quote {
-    max-width: 800px;
-    margin: 0 auto;
+.woman-card-content h2 {
     font-family: 'Playfair Display', serif;
-    font-style: italic;
+    color: var(--primary);
+    margin-bottom: 10px;
     font-size: 1.8rem;
-    line-height: 1.6;
 }
 
-.quote-author {
-    margin-top: 20px;
-    font-size: 1.2rem;
-    font-weight: 600;
+.woman-card-content .role {
+    color: var(--accent);
+    font-style: italic;
+    margin-bottom: 15px;
 }
 
 .cta-section {
-    padding: 100px 0;
+    background-color: var(--accent);
+    color: var(--primary);
     text-align: center;
-    background-color: var(--background-alt);
+    padding: 60px 0;
 }
 
 .cta-section h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: var(--primary-dark);
+    margin-bottom: 25px;
 }
 
-.cta-section p {
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin: 0 auto 40px;
+.btn {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--accent);
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background-color: #4A1C37;
+    transform: translateY(-5px);
 }
 
 footer {
@@ -237,22 +189,12 @@ footer p {
     color: var(--accent-light);
 }
 
+
 @media (max-width: 768px) {
-    header h1 {
+    .header h1 {
         font-size: 2.5rem;
     }
-    
-    .hero h2, .section-title h2, .cta-section h2 {
-        font-size: 2rem;
-    }
-    
-    .quote {
-        font-size: 1.5rem;
-        padding: 0 20px;
-    }
-    
-    .women-grid {
+    .featured-women {
         grid-template-columns: 1fr;
     }
 }
-
