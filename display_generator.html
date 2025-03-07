@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="form">
+        <h1>il n'y a rien de plus precieux que la vie. <br>femme c'est toi qui donne la vie. <br> tu es  un tresor. </h1>
+        <div class="image">
+            <div class="imagEntre">
+                <h2>femme de valeur entrez vorte photo </h2>
+                <div class="upload-container">
+                    <!-- Conteneur pour la prévisualisation de l'image -->
+                    <div id="imagePreview"></div>
+                     <!-- Champ d'entrée de fichier pour sélectionner une image -->
+                     <input type="file" id="fileInput" accept="image/*" class="btn">
+                     <input type="text" id="nameInput" placeholder="Entrez votre nom">
+                </div>
+               
+                <div class="boutton">
+                    <button id="generer" class="normal btn">GENERER</button>
+                    <button id="Regenerer" class="normal btn">REGENERER</button>
+                </div>
+            </div>
+                <!-- regeneration dynamique -->
+            <div class="regenerer">
+                <div id="resultContainer"></div>
+            
+                    <a id="downloadLink" download="image_generée.png"  class="btn">Télécharger l'image</a>
+            
+            </div>
+        </div>
+    </div>
+<script src="./script.js"></script>
 </body>
 </html>
