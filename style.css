@@ -1,5 +1,5 @@
 :root {
-    --primary: #5D2E46;
+    --primary: #360820;
     --accent: #E9C46A;
     --text-dark: #2A2A2A;
     --background-light: #F8F4F1;
@@ -31,7 +31,7 @@ body {
 }
 
 .header {
-    background: linear-gradient(135deg, var(--primary), #7A4063);
+    background: linear-gradient(135deg, var(--primary), #330320);
     color: var(--accent);
     padding: 40px 0;
     text-align: center;
@@ -52,8 +52,8 @@ body {
 }
 
 .logo img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     margin-right: 20px;
 }
 
@@ -187,6 +187,39 @@ footer p {
 
 .social-links a:hover {
     color: var(--accent-light);
+}
+  /* Styles de base pour le menu */
+  nav {
+    
+    background-color: #f4f4f4;
+    padding: 0%;
+    margin: 0%;
+    border-radius: 5px;
+    border-bottom: 2px solid #ccc;
+    background-image: url("../images/WhatsApp\ Image\ 2025-03-06\ à\ 08.37.58_ea75574f.jpg");
+    background-repeat: no-repeat;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+nav ul li a:hover {
+    color: white;
+    background-color: rgb(128, 0, 130);
+    border-radius: 5px;
 }
 
 
