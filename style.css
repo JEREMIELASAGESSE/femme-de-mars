@@ -190,7 +190,6 @@ footer p {
 }
   /* Styles de base pour le menu */
   nav {
-    
     background-color: #f4f4f4;
     padding: 0%;
     margin: 0%;
@@ -204,17 +203,28 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
-    padding: 5px 0px;
+    justify-content: space-between;
 }
 nav ul li {
     display: inline;
+    padding: 5% 0% 0% 0%;
+}
+nav ul li img{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 0% 0% 0% 0%;
+
 }
 nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    padding: 5px 10px;
+    
+}
+nav ul li img{
+    height: 100px;
+    width: 100px;
 }
 nav ul li a:hover {
     color: white;
