@@ -1,0 +1,225 @@
+:root {
+    --primary-color: #360820;
+    --primary-light: #6a1b9a;
+    --primary-dark: #210514;
+    --secondary-color: #E9C46A;
+    --text-color: #2A2A2A;
+    --text-light: #666;
+    --background-color: #F8F4F1;
+    --card-background: #ffffff;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    --font-size-base: 1rem;
+    --font-size-large: 1.8rem;
+    --font-size-xlarge: 2.2rem;
+    --max-width: 900px;
+    --image-preview-size: 300px;
+    --btn-padding: 12px 25px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.form {
+    background-color: var(--card-background);
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    max-width: var(--max-width);
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    font-size: var(--font-size-large);
+    line-height: 1.4;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: var(--font-size-xlarge);
+}
+
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#imagePreview {
+    width: 100%;
+    max-width: var(--image-preview-size);
+    height: var(--image-preview-size);
+    border: 2px dashed var(--secondary-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    margin-bottom: 15px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+#imagePreview img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.file-input-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.file-input-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.btn {
+    padding: var(--btn-padding);
+    border: none;
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    text-align: center;
+    font-size: var(--font-size-base);
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+#nameInput {
+    padding: 12px 20px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 30px;
+    width: 100%;
+    max-width: 300px;
+    font-size: var(--font-size-base);
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#nameInput:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 5px var(--secondary-color);
+}
+
+.boutton {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.regenerer {
+    display: none;
+    margin-top: 30px;
+    border-top: 1px solid #f0e0ff;
+    padding-top: 30px;
+}
+
+#resultContainer {
+    position: relative;
+    width: 600px;
+    height: 800px;
+    margin: 0 auto;
+    background-image: url('image_de_fond.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--secondary-color);
+}
+
+.citation {
+    font-style: italic;
+    font-size: 22px;
+    margin-top: 20px;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
+}
+
+.download-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+    }
+
+    #imagePreview {
+        max-width: 250px;
+        height: 250px;
+    }
+
+    #nameInput {
+        max-width: 100%;
+    }
+
+    .regenerer {
+        padding-top: 20px;
+    }
+}

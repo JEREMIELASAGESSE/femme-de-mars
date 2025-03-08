@@ -3,69 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Célébration de la Journée Internationale des Droits des Femmes - Mettre en lumière les parcours extraordinaires des femmes ivoiriennes">
     <title>E2C - Célébration des Femmes Inspirantes</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/armoirie.png" type="image/png">
 </head>
 <body>
     <header class="header">
         <div class="container">      
-            <nav>
-                <ul>
-                    <li><img src="./images/armoirie.png" alt="" height="" width=""></li>
-                    <li><a href="#Accueil">Accueil</a></li>
-                    <li><a href="#generateur">Generateur</a></li>
-                    <li><a href="#contact">A Propos</a></li>
-                    <li><a href="#"><img src="./images/armoirie.png" alt="" height="" width=""></a></li>
+            <nav class="main-nav">
+                <div class="logo-container">
+                    <a href="#Accueil">
+                        <img src="./images/armoirie.png" alt="Logo E2C" class="nav-logo">
+                    </a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Menu principal">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#Accueil" class="nav-link">Accueil</a></li>
+                    <li><a href="./display_generator.html" class="nav-link">Générateur</a></li>
+                    <li><a href="https://daip.ci/tic/recrutement" class="nav-link">À Propos</a></li>
                 </ul>
             </nav> 
             <div class="logo">
-                <img src="./images/e2cmagg.png" alt="">
+                <img src="./images/e2cmagg.png" alt="Logo E2C Femmes Inspirantes">
             </div>
             <div class="header-content">
-                <h1><marquee>« La Journée internationale de la femme est une célébration 
+                <div class="quote-container">
+                    <p class="scrolling-quote">« La Journée internationale de la femme est une célébration 
                     annuelle le 8 mars pour honorer les réalisations sociales, économiques, culturelles et politiques des femmes. C'est une journée pour reconnaître les progrès réalisés vers l'égalité des 
-                    sexes et pour sensibiliser aux défis auxquels les femmes sont encore confrontées dans le monde. »</marquee></h1>
+                    sexes et pour sensibiliser aux défis auxquels les femmes sont encore confrontées dans le monde. »</p>
+                </div>
                 <h1>Nos Femmes E2C : Parcours & Inspirations</h1>
-                <p>Célébration de la Journée Internationale des Droits des Femmes - Mettre en lumière les 
+                <p class="subtitle">Célébration de la Journée Internationale des Droits des Femmes - Mettre en lumière les 
                     parcours extraordinaires des femmes ivoiriennes</p>
-                
+                <a href="#generateur" class="cta-button">Créer mon badge</a>
             </div>
         </div>
     </header>
 
     <main class="container" id="Accueil">
+        <h2 class="section-title">Femmes Inspirantes</h2>
         <section class="featured-women">
             <div class="woman-card">
                 <div class="woman-card-image">
-                    <img src="./images/outtara.jpeg" alt="Sakanoko Siata Ouattara">
+                    <img src="./images/IMG_20250306_101500.jpg" alt="Photo de Dominique Ouattara">
                 </div>
                 <div class="woman-card-content">
-                    <h2>Sakanoko Siata Ouattara</h2>
+                    <h3>Maman Dominique Ouattara</h3>
+                    <p class="role">Première Dame de la Côte d'Ivoire</p>
+                    <p class="bio">Fondatrice de Save The Children Of Africa, engagée pour l'éducation et la protection des enfants.</p>
+                </div>
+            </div>
+            <div class="woman-card">
+                <div class="woman-card-image">
+                    <img src="./images/n'da.jpeg" alt="Photo de Mme Bouadou N'da Kadiatou">
+                </div>
+                <div class="woman-card-content">
+                    <h3>Mme Bouadou Epse Kouadio N'da Kadiatou</h3>
+                    <p class="role">Cheffe du cabinet du Ministère de l'Enseignement Technique</p>
+                    <p class="bio">Créative passionnée, elle développe son talent en infographie et communication visuelle.</p>
+                </div>
+            </div>
+            <div class="woman-card">
+                <div class="woman-card-image">
+                    <img src="./images/outtara.jpeg" alt="Photo de Sakanoko Siata Ouattara">
+                </div>
+                <div class="woman-card-content">
+                    <h3>Mme Sakanoko Siata Ouattara</h3>
                     <p class="role">Cheffe de Projet à l'ANFP</p>
-                    <p>Experte en formation professionnelle, elle œuvre pour l'insertion des jeunes et l'égalité des chances.</p>
+                    <p class="bio">Experte en formation professionnelle, elle œuvre pour l'insertion des jeunes et l'égalité des chances.</p>
                 </div>
             </div>
-
             <div class="woman-card">
                 <div class="woman-card-image">
-                    <img src="./images/IMG_20250306_101500.jpg" alt="Ana-Khadijah Touré">
+                    <img src="./images/1684945995988.jpeg" alt="Photo de Ana-Khadijah Touré">
                 </div>
                 <div class="woman-card-content">
-                    <h2>Maman Dominique Ouattara</h2>
-                    <p class="role">Premiere Damme de la Côte D'Ivoire</p>
-                    <p>Fondatrice de Save The Children Of Africa.</p>
+                    <h3>Mme Ana-Khadijah Touré</h3>
+                    <p class="role">Manager Générale de GOMYCODE Côte d'Ivoire</p>
+                    <p class="bio">En tant que General Manager de GOMYCODE Côte d'Ivoire, elle joue un rôle majeur dans l'essor des compétences digitales, accompagnant de nombreux jeunes vers des carrières dans la technologie.</p>
+                    <a href="https://www.linkedin.com/in/ana-khadijah-tour%C3%A9-msc-07005618/?originalSubdomain=ci" class="read-more">Découvrir son parcours</a>
                 </div>
             </div>
-
             <div class="woman-card">
                 <div class="woman-card-image">
-                    <img src="./images/n'da.jpeg" alt="Traoré Kadidjatou">
+                    <img src="./images/IMG_0141.png" alt="Photo de Community Manager">
+                    <div class="image-badge">1ère Promotion E2C-TIC</div>
                 </div>
                 <div class="woman-card-content">
-                    <h2>Madamme Bouadou Epse Kouadio N'da Kadiatou</h2>
-                    <p class="role">Cheffe du cabinet du ministaire de l'enseignement tchnique de la formation profetionnelle et de l'apprentissage</p>
-                    <p>Créative passionnée, elle développe son talent en infographie et communication visuelle.</p>
+                    <h3>Fatou Coulibaly</h3>
+                    <p class="role">Community Manager</p>
+                    <p class="bio">Passionnée par le community management, elle développe son talent en tant que bénéficiaire de la 1ère cohorte E2C.</p>
+                </div>
+            </div>
+            <div class="woman-card">
+                <div class="woman-card-image">
+                    <img src="./images/traore.png" alt="Photo de Traoré Kadidjatou">
+                    <div class="image-badge">1ère Promotion E2C-TIC</div>
+                </div>
+                <div class="woman-card-content">
+                    <h3>Traoré Kadidjatou</h3>
+                    <p class="role">Infographie</p>
+                    <p class="bio">Passionnée par l'infographie et la création visuelle, Traoré Kadidjatou est une jeune designer graphique talentueuse qui met son savoir-faire au service de la communication visuelle.</p>
                 </div>
             </div>
         </section>
@@ -74,20 +120,63 @@
     <section class="cta-section" id="generateur">
         <div class="container">
             <h2>Générez votre badge pour le 8 Mars</h2>
-            <a href="./display_generator.html" class="btn">Créer ma photo</a>
+            <p>Créez facilement votre badge personnalisé pour célébrer la Journée Internationale des Droits des Femmes</p>
+            <a href="./display_generator.html" class="btn pulse-btn">Créer ma photo <span class="arrow">→</span></a>
+            <div class="badge-preview">
+                <img src="./images/journee.png" alt="Exemple de badge 8 mars" class="badge-preview-img">
+            </div>
         </div>
     </section>
-    <footer>
-        <div class="container" id="contact">
-            <p>💜 Célébrons les femmes ensemble ! ✨</p>
-            <p>Projet open-source sous licence MIT</p>
-            <p>Realiser par la première promotion Webmaster de <u>SINEMATIALI</u> du prjet E2C-TIC séssion 2024-2025</p>
-            <div class="social-links">
-                <a href="https://github.com/Ano2225/generateur-dp-8mars" aria-label="GitHub">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                </a>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2>Le Projet E2C-TIC</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="./images/e2cmagg.png" alt="Logo du projet E2C">
+                </div>
+                <div class="about-text">
+                    <p>Le projet E2C-TIC vise à former les jeunes aux métiers du numérique pour favoriser leur insertion professionnelle. La promotion Webmaster de Sinematiali fait partie des initiatives de formation aux compétences digitales en Côte d'Ivoire.</p>
+                    <p>Cette plateforme a été entièrement conçue et développée par les apprenants de la 1ère promotion Webmaster de Sinematiali, démontrant leur savoir-faire et leur créativité.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <img src="./images/e2cmagg.png" alt="Logo E2C" class="footer-logo">
+                    <p>💜 Célébrons les femmes ensemble ! ✨</p>
+                    <p>Projet développé par la 1ère promotion Webmaster de <strong>SINEMATIALI</strong> du projet E2C-TIC Session 2024-2025</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="#Accueil">Accueil</a></li>
+                        <li><a href="./display_generator.html">Générateur de badge</a></li>
+                        <li><a href="https://daip.ci/tic/recrutement">À propos du projet</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Projet open-source sous licence MIT</p>
+                <p>&copy; 2025 E2C-TIC Côte d'Ivoire. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
 </body>
 </html>
+    
