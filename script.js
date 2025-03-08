@@ -1,3 +1,20 @@
+//visualisation de l'IMAGE
+document.getElementById('fileInput').addEventListener('change', function(event) {
+    const file = event.target.files[0]; // Récupérer le fichier sélectionné
+    const reader = new FileReader(); // Créer un nouvel objet FileReader
+    
+    // Lorsque le fichier est chargé
+    reader.onload = function(e) {
+        const previewContainer = document.getElementById('imagePreview'); // Obtenir le conteneur de prévisualisation
+        // Afficher l'image dans le conteneur de prévisualisation
+        previewContainer.innerHTML = '<img src="' + e.target.result + '" alt="Image Preview">';
+    };
+    
+    if (file) {
+        reader.readAsDataURL(file); // Lire le fichier en tant qu'URL de données
+    }
+});
+
 // Tableau des citations pour la Journée de la Femme
 const citations = [
     "Aux femmes fortes et inspirantes, aux femmes qui constituent un modèle pour la société, bonne journée de la femme !",
@@ -182,7 +199,7 @@ document.getElementById('generer').addEventListener('click', function() {
             context.fillText(nameInput, canvas.width / 2, imgY + imgSize + 70);
             
             // Citation aléatoire avec la couleur blanche
-            context.font = 'italic 28px Montserrat';
+            context.font = "Georgia, 'Times New Roman', Times, serif"
             context.fillStyle = 'white';
             context.fillText(getRandomCitation(), canvas.width / 2, imgY + imgSize + 120, canvas.width - 60);
             

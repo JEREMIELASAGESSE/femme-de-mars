@@ -25,20 +25,21 @@
 
 body {
     background-color: var(--background-color);
-    display: flex;
-    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    /* display: flex;
+    justify-content: center; 
     align-items: center;
-    min-height: 100vh;
-    padding: 20px;
+    min-height: 100vh;*/
     font-family: 'Arial', sans-serif;
+    width: 100%;
 }
 
 .form {
     background-color: var(--card-background);
-    border-radius: 15px;
+    border-radius: 0px;
     box-shadow: var(--box-shadow);
-    width: 100%;
-    max-width: var(--max-width);
+    max-width:100%;
     overflow: hidden;
 }
 
@@ -66,6 +67,17 @@ h2 {
     gap: 15px;
     margin-bottom: 20px;
 }
+.image{
+    display: flex;
+    gap: 20px;
+    padding: 20px
+}
+.regenerer{
+    display:none;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 
 #imagePreview {
     width: 100%;
@@ -81,8 +93,7 @@ h2 {
     overflow: hidden;
     background-color: #f9f9f9;
 }
-
-#imagePreview img {
+#imagePreview img{
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
@@ -149,24 +160,19 @@ h2 {
     flex-wrap: wrap;
 }
 
-.regenerer {
-    display: none;
-    margin-top: 30px;
-    border-top: 1px solid #f0e0ff;
-    padding-top: 30px;
-}
-
 #resultContainer {
-    position: relative;
-    width: 600px;
-    height: 800px;
-    margin: 0 auto;
+    width:100%;
+    height: 50px;
     background-image: url('image_de_fond.jpg');
-    background-size: cover;
     background-position: center;
+    background-size:contain;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+#resultContainer img{
+    border-radius: 20px;
+}
+
 
 .text-overlay {
     position: absolute;
@@ -186,7 +192,7 @@ h2 {
 }
 
 .citation {
-    font-style: italic;
+    font-style:normal;
     font-size: 22px;
     margin-top: 20px;
     line-height: 1.5;
@@ -198,6 +204,12 @@ h2 {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+   
+}
+.download-container a{
+    position:relative;
+    top: 460px;
+
 }
 
 /* Responsive */
