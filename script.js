@@ -2,7 +2,7 @@
 document.getElementById('fileInput').addEventListener('change', function(event) {
     const file = event.target.files[0]; // Récupérer le fichier sélectionné
     const reader = new FileReader(); // Créer un nouvel objet FileReader
-    
+
     // Lorsque le fichier est chargé
     reader.onload = function(e) {
         const previewContainer = document.getElementById('imagePreview'); // Obtenir le conteneur de prévisualisation
